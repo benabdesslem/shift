@@ -261,22 +261,13 @@ MemoryPoolMXBean item = (MemoryPoolMXBean) iter.next();
 	<TH align=left>Parameter:</TH>
 	<TH align=left>Value:</TH>
 </TR>
-<%
-		while(e.hasMoreElements()) {
-			String k = (String) e.nextElement();
-			String val = getServletConfig().getInitParameter(k);
-%>
+
 <TR valign=top>
 	<TD><%= k %></TD>
 	<TD><%= val %></TD>
 </TR>
-<%
-		}
-%>
+
 </TABLE>
-<%
-	}
-%>
 
 </BODY>
 </HTML>
